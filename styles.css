@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #1a1a1a;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 60px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: #ffcc00;
+    color: #1a1a1a;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #e6b800;
+}
+
+/* Features Section */
+.features {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    padding: 1rem;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-item {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.testimonial-item p {
+    font-style: italic;
+}
+
+.testimonial-item span {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* Call-to-Action Section */
+.cta {
+    padding: 4rem 2rem;
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    text-align: center;
+    background: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
